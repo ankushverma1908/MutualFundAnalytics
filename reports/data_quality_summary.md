@@ -1,38 +1,67 @@
-# Day 1 Data Quality Summary
+# Day 1 — Data Quality Summary
 
-## Dataset Overview
+## ✅ fund_master
+- Shape: 40 rows × 15 cols
+- Duplicates: 0
+- Nulls: None
+- Anomaly note: None
 
-### nav_118632_nippon_large_cap
-- Shape: 3,316 rows x 7 columns
-- Anomalies:
-  - single-value (constant) columns: ['scheme_code', 'scheme_name', 'fund_house', 'scheme_type', 'scheme_category']
+## ✅ nav_history
+- Shape: 46,000 rows × 3 cols
+- Duplicates: 0
+- Nulls: None
+- Anomaly note: None
 
-### nav_119092_axis_bluechip
-- Shape: 3,583 rows x 7 columns
-- Anomalies:
-  - single-value (constant) columns: ['scheme_code', 'scheme_name', 'fund_house', 'scheme_type', 'scheme_category']
+## ✅ aum_by_fund_house
+- Shape: 90 rows × 5 cols
+- Duplicates: 0
+- Nulls: None
+- Anomaly note: None
 
-### nav_119551_sbi_bluechip
-- Shape: 3,254 rows x 7 columns
-- Anomalies:
-  - single-value (constant) columns: ['scheme_code', 'scheme_name', 'fund_house', 'scheme_type', 'scheme_category']
+## ⚠️ monthly_sip_inflows
+- Shape: 48 rows × 6 cols
+- Duplicates: 0
+- Nulls: {'yoy_growth_pct': 12}
+- Anomaly note: yoy_growth_pct: first 12 months have no prior year (expected)
 
-### nav_120503_icici_bluechip
-- Shape: 3,325 rows x 7 columns
-- Anomalies:
-  - single-value (constant) columns: ['scheme_code', 'scheme_name', 'fund_house', 'scheme_type', 'scheme_category']
+## ✅ category_inflows
+- Shape: 144 rows × 3 cols
+- Duplicates: 0
+- Nulls: None
+- Anomaly note: None
 
-### nav_120841_kotak_bluechip
-- Shape: 3,319 rows x 7 columns
-- Anomalies:
-  - single-value (constant) columns: ['scheme_code', 'scheme_name', 'fund_house', 'scheme_type', 'scheme_category']
+## ✅ industry_folio_count
+- Shape: 21 rows × 6 cols
+- Duplicates: 0
+- Nulls: None
+- Anomaly note: None
 
-### nav_125497_hdfc_top_100_direct
-- Shape: 3,109 rows x 7 columns
-- Anomalies:
-  - single-value (constant) columns: ['scheme_code', 'scheme_name', 'fund_house', 'scheme_type', 'scheme_category']
+## ✅ scheme_performance
+- Shape: 40 rows × 19 cols
+- Duplicates: 0
+- Nulls: None
+- Anomaly note: None
 
-### nav_history_live_combined
-- Shape: 19,906 rows x 7 columns
-- Anomalies:
-  - single-value (constant) columns: ['scheme_type']
+## ✅ investor_transactions
+- Shape: 32,778 rows × 13 cols
+- Duplicates: 0
+- Nulls: None
+- Anomaly note: None
+
+## ✅ portfolio_holdings
+- Shape: 322 rows × 8 cols
+- Duplicates: 0
+- Nulls: None
+- Anomaly note: None
+
+## ✅ benchmark_indices
+- Shape: 8,050 rows × 3 cols
+- Duplicates: 0
+- Nulls: None
+- Anomaly note: None
+
+## AMFI Code Validation
+- fund_master codes: 40
+- nav_history codes: 40
+- Missing: None ✅
+- Extra: None ✅
