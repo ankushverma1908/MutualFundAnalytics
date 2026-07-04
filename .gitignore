@@ -16,3 +16,4 @@ data/processed/*.csv
 .DS_Store
 .vscode/
 *.log
+.ipynb_checkpoints/
